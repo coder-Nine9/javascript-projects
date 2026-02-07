@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right , #222,#222222ec, #222222d5) no-repeat;
+    min-height:100vh ;
+    padding: 10px;
+    font-family: "Tajawal", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: linear-gradient(to bottom , #3c2efcda , #8093f2da , white) no-repeat;
+    padding: 25px;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+}
+.search {
+   display: flex;
+   gap: 5px;
+}
+.search input{
+   flex-grow: 1;
+   height: 50px;
+   padding: 15px;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+   font-size: 20px;
+   font-weight: 700;
+   transition: all 0.3s ease;
+}
+.search input:hover{
+    transform: scale(1.01);
+   box-shadow: 0px 20px 22px rgba(0,0,0,0.1);
+}
+.search button {
+   width: 10%;
+   height: 50px;
+   padding: 15px;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+   position: relative;
+   transition: all 0.3s ease;
+}
+.search button:hover {
+   width: 15%;
+   background: linear-gradient(to right , #9dff00f8,#a3ff0fb1) no-repeat;
+}
+
+.search button  img{
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   bottom: 12px;
+   left: 10px;
+}
+
+.search + div{
+    margin-top: 20px;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+.search + div img{
+      width: clamp(200px , 80%, 270px);
+}
+.search + div h1{
+    font-size: 5rem;
+    
+}
+.search + div p{
+    font-size: 30px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.HW{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HW div{
+    display: flex;
+    gap: 10px;
+}
+.HW div img{
+     width: 60px;
+     height: 60px;
+}
+.HW div p {
+    line-height: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+.HW div p span:first-child {
+    font-size: 35px;
+    font-weight: 700;
+}

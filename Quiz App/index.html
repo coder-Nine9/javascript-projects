@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section id="firstPage">
+            <h1>Quiz</h1>
+
+            <h2>1- What's your name?</h2>
+
+            <div class="answer-area">
+
+                <div class="answer">
+                    <input id="answer-1" checked type="radio" name="question">
+                    <label for="answer-1"></label>
+                </div>
+
+                <div class="answer">
+                    <input id="answer-2" type="radio" name="question">
+                    <label for="answer-2"></label>
+                </div>
+
+                <div class="answer">
+                    <input id="answer-3" type="radio" name="question">
+                    <label for="answer-3"></label>
+                </div>
+
+                <div class="answer">
+                    <input id="answer-4" type="radio" name="question">
+                    <label for="answer-4"></label>
+                </div>
+
+            </div>
+
+            <button id="Next">Next</button>
+
+            <div class="tests-timer">
+                <p>Number of questions : <span></span></p>
+                <p id="timer"><span id="minutes"></span> : <span id="seconds"></span></p>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+        </section>
+
+
+        <section id="secondPage">
+             <h1 id="result"></h1>
+             <p>you score is <span id="score"></span></p>
+             <button id="restart">Restart</button>
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
