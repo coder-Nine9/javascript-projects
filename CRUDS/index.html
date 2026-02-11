@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CRUDS</h1>
+        <p>CREATE READ UPDATE DELETE SEARCH</p>
+    </header>
+
+    <main>
+        <input id="title" type="text" placeholder="Title">
+        <div class="calc-total">
+            <input onkeyup="getTotal()" id="price" type="number" placeholder="Price">
+            <input onkeyup="getTotal()" id="taxes" type="number" placeholder="taxes">
+            <input onkeyup="getTotal()" id="ads" type="number" placeholder="ads">
+            <input onkeyup="getTotal()"  id="discount" type="number" placeholder="Discount">
+            <div >Total: <span id="total"></span></div>
+        </div>
+        <input id="count" type="number" placeholder="count">
+        <input id="category" type="text" placeholder="category">
+        <button id="updateCreate" onclick="getProduct()">Create</button>
+        <input id="inputSearch" onkeyup="search(this.value)" type="text" placeholder="Search">
+        <div class="search">
+            <button>Search By Title</button>
+            <button>Search By category</button>
+        </div>
+        <button id="deleteAll" onclick="deleteAll()">Delete ALL (15)</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody >
+               
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
